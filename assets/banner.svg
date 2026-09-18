@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  
+  <!-- Subtle Glow Layer -->
+  <circle cx="600" cy="150" r="400" fill="url(#glow)"/>
+
+  <!-- Dynamic Animated Background Elements (Background layer - lower opacity) -->
+  <g opacity="0.25">
+    <!-- Supply Chain Network Nodes & Animated Connecting Rays -->
+    <line x1="100" y1="220" x2="300" y2="180" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="24" to="0" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="180" x2="550" y2="230" stroke="#818cf8" stroke-width="2" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="24" to="0" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="550" y1="230" x2="850" y2="190" stroke="#c084fc" stroke-width="2" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="0" to="24" dur="3.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="850" y1="190" x2="1100" y2="240" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="0" to="24" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Pulse Circles at Nodes -->
+    <circle cx="100" cy="220" r="8" fill="#38bdf8">
+      <animate attributeName="r" values="6;12;6" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="180" r="10" fill="#818cf8">
+      <animate attributeName="r" values="8;14;8" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="230" r="9" fill="#c084fc">
+      <animate attributeName="r" values="7;13;7" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="850" cy="190" r="11" fill="#38bdf8">
+      <animate attributeName="r" values="9;15;9" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="240" r="8" fill="#818cf8">
+      <animate attributeName="r" values="6;12;6" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Stock level bar charts in background -->
+    <rect x="950" y="70" width="16" height="60" rx="4" fill="#38bdf8" opacity="0.6">
+      <animate attributeName="height" values="40;75;40" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="90;55;90" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="975" y="50" width="16" height="80" rx="4" fill="#818cf8" opacity="0.6">
+      <animate attributeName="height" values="80;50;80" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="50;80;50" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1000" y="30" width="16" height="100" rx="4" fill="#c084fc" opacity="0.6">
+      <animate attributeName="height" values="100;65;100" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="30;65;30" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Foreground Title and Subtitle - Clear & High Contrast -->
+  <g text-anchor="middle">
+    <!-- Top Badge Text -->
+    <rect x="440" y="35" width="320" height="28" rx="14" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="600" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#38bdf8" letter-spacing="1">
+      📦 CURATED ECOSYSTEM &amp; RESEARCH
+    </text>
+
+    <!-- Main Title -->
+    <text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      Awesome Multi-Echelon Inventory Optimization
+    </text>
+    
+    <!-- Decorative Gradient Bar -->
+    <rect x="420" y="133" width="360" height="4" rx="2" fill="url(#accent)"/>
+
+    <!-- Subtitle Line 1 -->
+    <text x="600" y="175" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#cbd5e1">
+      Multi-Echelon Inventory Optimization (MEIO) • Safety Stock Positioning • Supply Chain Analytics
+    </text>
+
+    <!-- Subtitle Line 2 (Highlighting SaaS & Open-Source) -->
+    <text x="600" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#94a3b8">
+      Top Commercial SaaS Platforms &amp; Open-Source GitHub Projects, Libraries &amp; Reinforcement Learning Models
+    </text>
+
+    <!-- Bottom Feature Tags -->
+    <g transform="translate(0, 238)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">
+      <!-- Tag 1 -->
+      <rect x="310" y="0" width="160" height="24" rx="12" fill="#0f172a" stroke="#334155"/>
+      <text x="390" y="16" fill="#38bdf8">⚡ Commercial Pricing</text>
+
+      <!-- Tag 2 -->
+      <rect x="485" y="0" width="160" height="24" rx="12" fill="#0f172a" stroke="#334155"/>
+      <text x="565" y="16" fill="#818cf8">📊 Valuation &amp; Revenue</text>
+
+      <!-- Tag 3 -->
+      <rect x="660" y="0" width="220" height="24" rx="12" fill="#0f172a" stroke="#334155"/>
+      <text x="770" y="16" fill="#c084fc">⭐ Open-Source Star Rankings</text>
+    </g>
+  </g>
+</svg>
