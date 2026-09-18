@@ -55,9 +55,9 @@ Below is a comparison of leading enterprise SaaS and hosted solutions for multi-
 
 ## 💻 Open-Source GitHub Repositories
 
-Open-source implementations for multi-echelon inventory optimization provide essential algorithmic foundations, academic models, discrete-event simulations, and reinforcement learning environments. Sorted by **GitHub Star Count** (descending).
+Open-source implementations for multi-echelon inventory optimization provide essential algorithmic foundations, academic models, discrete-event simulations, and reinforcement learning environments. Sorted by **GitHub Stars_Count** (descending).
 
-| Repository & Link 🐙 | Star Count 🌟 | Primary Focus & Algorithmic Paradigm 🧠 | Language / Tech Stack 🛠️ |
+| Repository & Link 🐙 | Stars_Count 🌟 | Primary Focus & Algorithmic Paradigm 🧠 | Language / Tech Stack 🛠️ |
 | :--- | :---: | :--- | :--- |
 | **[Stockpyl](https://github.com/LarrySnyder/stockpyl)** | [![Stockpyl Stars](https://img.shields.io/github/stars/LarrySnyder/stockpyl?style=social&color=white)](https://github.com/LarrySnyder/stockpyl/stargazers) | Comprehensive Python inventory optimization library implementing Stochastic-Service Model (SSM) and Guaranteed-Service Model (GSM) across serial, tree, and general multi-echelon supply networks. | `Python` |
 | **[Multi-Echelon Inventory Optimization](https://github.com/anshul-musing/multi-echelon-inventory-optimization)** | [![MEIO SimPy Stars](https://img.shields.io/github/stars/anshul-musing/multi-echelon-inventory-optimization?style=social&color=white)](https://github.com/anshul-musing/multi-echelon-inventory-optimization/stargazers) | Discrete-event simulation-optimization engine (SimPy + SciPy + scikit-optimize + RBFOpt) for multi-stage safety stock placement under uncertain lead times. | `Python` • `SimPy` • `SciPy` |
